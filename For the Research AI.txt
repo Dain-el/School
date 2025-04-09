@@ -1,0 +1,16 @@
+To create an executable file using PyInstaller, follow these steps:
+
+Install PyInstaller using pip: pip install pyinstaller
+Navigate to the directory where your Python script is located: cd /path/to/your/script
+Run the following command to create a standalone executable file: pyinstaller --onefile dain_research_ai.py
+This will create a dist directory containing the executable file dain_research_ai.exe (on Windows) or dain_research_ai (on macOS or Linux).
+Note: Make sure to replace YOUR_API_KEY_HERE with your actual ChatGPT API key before creating the executable file.
+
+Optional:
+
+To add an icon to the executable file, use the --icon option: pyinstaller --onefile --icon=icon.ico dain_research_ai.py
+To specify a different output directory, use the --distpath option: pyinstaller --onefile --distpath=/path/to/output dain_research_ai.py
+Troubleshooting:
+
+If you encounter issues with dependencies, try using the --hidden-import option to specify additional dependencies: pyinstaller --onefile --hidden-import=module_name dain_research_ai.py
+If you encounter issues with the executable file not running, try checking the system logs for errors or using a debugger to diagnose the issue.
